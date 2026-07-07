@@ -1,4 +1,5 @@
-// so this is the initalization on the arr 
+//calculate the product of all the elemet in the given array.
+
 #include<iostream>
 using namespace std;
 int main (){
@@ -6,13 +7,13 @@ int main (){
     // cout<<arr[3]<<endl;
     int arr[] = {4,2,5,6,7,8,12,34,56,77,86,45};
     int n = sizeof(arr)/sizeof(arr[0]);//= 48 that which is 12 * 4 = 48
-    cout<<n;
-    cout<<endl;
-    cout<<endl;
+int sum = 1;
     for (int i = 0; i < 12; i++)
     {
-        cout<<arr[i]<<" ";
+        sum*=arr[i];
     }
+    cout<<sum;
+    // cout<< sum/n;
     
     return 0;
 }
